@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="/">hsilgne</a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a class="button button-dark" href="mailto:alinsalari@hotmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">post</span>
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.date | date: "%B %d, %Y" }}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <article class="card">
+        {{ content }}
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 hsilgne
+  </div>
+</footer>
+
+</body>
+</html>
