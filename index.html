@@ -3,398 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hsilgne</title>
-<meta name="description" content="hsilgne — english backwards. A minimal place for language ideas, resources, and notes.">
-
-<style>
-:root{
---bg:#ffffff;
---surface:#ffffff;
---soft:#f7f7f5;
---line:#e8e8e3;
---text:#191919;
---muted:#6b6b6b;
---max:920px;
---radius:14px;
-}
-
-*{box-sizing:border-box}
-
-body{
-margin:0;
-font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-background:var(--bg);
-color:var(--text);
-line-height:1.65;
-}
-
-.container{
-width:min(var(--max),calc(100% - 32px));
-margin:auto;
-}
-
-header{
-position:sticky;
-top:0;
-background:rgba(255,255,255,.9);
-backdrop-filter:blur(10px);
-border-bottom:1px solid var(--line);
-z-index:20;
-}
-
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-min-height:64px;
-}
-
-.brand{
-font-weight:700;
-letter-spacing:-.02em;
-}
-
-nav{
-display:flex;
-gap:18px;
-}
-
-nav a{
-text-decoration:none;
-color:var(--muted);
-font-size:.95rem;
-}
-
-nav a:hover{color:var(--text)}
-
-.button{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:10px 16px;
-border-radius:8px;
-border:1px solid var(--line);
-font-size:.9rem;
-text-decoration:none;
-}
-
-.button-dark{
-background:#111;
-color:#fff;
-border-color:#111;
-}
-
-.hero{
-padding:90px 0 40px;
-}
-
-.eyebrow{
-display:inline-block;
-padding:6px 10px;
-border:1px solid var(--line);
-border-radius:999px;
-background:var(--soft);
-font-size:.85rem;
-color:var(--muted);
-margin-bottom:18px;
-}
-
-h1{
-font-size:clamp(2.4rem,6vw,4.4rem);
-margin:0 0 12px;
-letter-spacing:-.03em;
-}
-
-h2{
-font-size:clamp(1.4rem,4vw,2rem);
-margin-bottom:10px;
-}
-
-h3{
-font-size:1.05rem;
-margin-bottom:6px;
-}
-
-.lead{
-max-width:55ch;
-color:var(--muted);
-}
-
-.hero-actions{
-display:flex;
-gap:12px;
-margin-top:22px;
-}
-
-section{
-padding:32px 0;
-}
-
-.grid-2{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:16px;
-}
-
-.grid-3{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:16px;
-}
-
-.card{
-padding:20px;
-border:1px solid var(--line);
-border-radius:var(--radius);
-background:var(--surface);
-}
-
-.card p,
-.card li{
-color:var(--muted);
-}
-
-.list{
-padding-left:18px;
-margin:0;
-}
-
-.section-head{
-margin-bottom:16px;
-}
-
-.section-copy{
-color:var(--muted);
-max-width:60ch;
-}
-
-footer{
-border-top:1px solid var(--line);
-padding:28px 0;
-color:var(--muted);
-font-size:.9rem;
-margin-top:40px;
-}
-
-@media(max-width:820px){
-.grid-2,
-.grid-3{
-grid-template-columns:1fr;
-}
-
-.nav{
-flex-direction:column;
-align-items:flex-start;
-padding:12px 0;
-}
-
-.hero{padding-top:60px}
-}
-</style>
+<title>{{ site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<link rel="stylesheet" href="/assets/styles.css">
 </head>
 
 <body>
 
 <header>
-<div class="container nav">
-<a class="brand" href="#top">hsilgne</a>
+  <div class="container nav">
+    <a class="brand" href="/">hsilgne</a>
 
-<nav>
-<a href="#about">About</a>
-<a href="#resources">Resources</a>
-<a href="#blog">Blog</a>
-<a href="#faq">FAQ</a>
-<a class="button button-dark" href="#contact">Contact</a>
-</nav>
-</div>
+    <nav>
+      <a href="#blog">Blog</a>
+      <a class="button button-dark" href="mailto:alinsalari@hotmail.com">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <main id="top">
 
-<section class="hero">
-<div class="container">
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">english, backwards</span>
 
-<span class="eyebrow">english, backwards</span>
+      <h1>Blog</h1>
 
-<h1>hsilgne is english backwards.</h1>
+      <p class="lead">
+        Notes on language, learning, words, and whatever else seems worth writing down.
+      </p>
 
-<p class="lead">
-A minimal place for language ideas, downloadable resources, and small notes about learning English.
-</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#blog">Read posts</a>
+        <a class="button" href="mailto:alinsalari@hotmail.com">Contact</a>
+      </div>
+    </div>
+  </section>
 
-<div class="hero-actions">
-<a class="button button-dark" href="#resources">Browse resources</a>
-<a class="button" href="#blog">Read blog</a>
-</div>
+  <section id="blog">
+    <div class="container">
+      <div class="section-head">
+        <h2>Posts</h2>
+        <p class="section-copy">Short notes about language, learning, and interesting ideas about English.</p>
+      </div>
 
-</div>
-</section>
-
-<section id="about">
-<div class="container grid-2">
-
-<div class="card">
-<h2>About</h2>
-
-<p><strong>Teacher by profession, language nerd by habit.</strong></p>
-
-<p>
-Languages are strange things. Words travel across cultures, meanings change over time, and sometimes the best way to understand language is simply to look at it differently — even backwards.
-</p>
-
-<p>
-hsilgne is a quiet place on the internet for language curiosity, learning resources, and simple ideas about how people learn and use English.
-</p>
-
-</div>
-
-<div class="card">
-<h3>Simple idea</h3>
-
-<p>
-A small corner of the internet for language curiosity.
-</p>
-
-<p>
-Resources, notes, and small observations about how language works and how people learn it.
-</p>
-
-</div>
-
-</div>
-</section>
-
-<section id="resources">
-<div class="container">
-
-<div class="section-head">
-<h2>Resources for students</h2>
-<p class="section-copy">
-Simple materials that help learners practice English. Most files are downloadable PDFs.
-</p>
-</div>
-
-<div class="grid-2">
-
-<div class="card">
-<h3>Downloads</h3>
-
-<ul class="list">
-<li><a href="files/ielts-writing-guide.pdf">IELTS Writing Guide</a></li>
-<li><a href="files/b1-speaking-questions.pdf">B1 Speaking Questions</a></li>
-<li><a href="files/academic-vocabulary.pdf">Academic Vocabulary List</a></li>
-<li><a href="files/email-writing-template.pdf">Email Writing Template</a></li>
-</ul>
-
-</div>
-
-<div class="card">
-<h3>Study support</h3>
-
-<ul class="list">
-<li>Study plans</li>
-<li>Writing tips</li>
-<li>Speaking prompts</li>
-<li>Vocabulary lists</li>
-</ul>
-
-</div>
-
-</div>
-</div>
-</section>
-
-<section id="blog">
-<div class="container">
-
-<div class="section-head">
-<h2>Blog</h2>
-<p class="section-copy">
-Short notes about language, learning, and interesting patterns in English.
-</p>
-</div>
-
-<div class="grid-3">
-
-<article class="card">
-<h3>Why Languages Are Strange</h3>
-<p>
-Some languages use tone, some use gender, some change word order completely. Language is full of surprising patterns.
-</p>
-</article>
-
-<article class="card">
-<h3>Words Travel</h3>
-<p>
-Many English words come from Latin, Greek, Arabic, and French. Every word has a small history behind it.
-</p>
-</article>
-
-<article class="card">
-<h3>What Makes a Word Memorable?</h3>
-<p>
-Rhythm, sound, and repetition often make language easier for the brain to remember.
-</p>
-</article>
-
-</div>
-
-</div>
-</section>
-
-<section id="faq">
-<div class="container">
-
-<div class="section-head">
-<h2>FAQ</h2>
-</div>
-
-<div class="grid-3">
-
-<div class="card">
-<h3>What is this site?</h3>
-<p>A small portfolio and resource space for language materials and ideas.</p>
-</div>
-
-<div class="card">
-<h3>Can I download files?</h3>
-<p>Yes. Resources are simple downloadable PDFs.</p>
-</div>
-
-<div class="card">
-<h3>Will booking be added?</h3>
-<p>Possibly later. The design keeps that option open.</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section id="contact">
-<div class="container">
-
-<div class="card">
-<h2>Contact</h2>
-<p>
-Questions, ideas, or feedback — feel free to get in touch.
-</p>
-
-<p>
-<a href="mailto:your@email.com">your@email.com</a>
-</p>
-
-</div>
-
-</div>
-</section>
+      {% for post in site.posts %}
+      <article class="card">
+        <div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
 
 </main>
 
 <footer>
-<div class="container">
-© 2026 hsilgne
-</div>
+  <div class="container">
+    © 2026 hsilgne
+  </div>
 </footer>
 
 </body>
