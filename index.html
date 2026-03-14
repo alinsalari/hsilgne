@@ -13,7 +13,6 @@
 <header>
   <div class="container nav">
     <a class="brand" href="/">hsilgne</a>
-
     <nav>
       <a href="#blog">Blog</a>
       <a class="button button-dark" href="mailto:alinsalari@hotmail.com">Contact</a>
@@ -22,20 +21,16 @@
 </header>
 
 <main id="top">
-
   <section class="hero">
     <div class="container">
       <span class="eyebrow">english, backwards</span>
-
       <h1>Blog</h1>
-
       <p class="lead">
         Notes on language, learning, words, and whatever else seems worth writing down.
       </p>
-
       <div class="hero-actions">
         <a class="button button-dark" href="#blog">Read posts</a>
-        <a class="button" href="mailto:alinsalari@hotmail.com">Contact</a>
+        <a class="button button-light" href="mailto:alinsalari@hotmail.com">Contact</a>
       </div>
     </div>
   </section>
@@ -43,8 +38,8 @@
   <section id="blog">
     <div class="container">
       <div class="section-head">
-        <h2>Posts</h2>
-        <p class="section-copy">Short notes about language, learning, and interesting ideas about English.</p>
+        <h2>Blog</h2>
+        <p class="section-copy">Notes on language, learning, and interesting ideas about English.</p>
       </div>
 
       {% for post in site.posts %}
@@ -57,12 +52,19 @@
     </div>
   </section>
 
+  <section id="contact">
+    <div class="container">
+      <div class="card contact-card">
+        <h2>Contact</h2>
+        <p>Questions, ideas, or feedback — feel free to get in touch.</p>
+        <p><a href="mailto:alinsalari@hotmail.com">alinsalari@hotmail.com</a></p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <div class="container">
-    © 2026 hsilgne
-  </div>
+  <div class="container">© 2026 hsilgne</div>
 </footer>
 
 </body>
